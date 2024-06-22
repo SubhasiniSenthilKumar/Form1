@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .left-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+  
+    height: 100px;
+    width: -1000px;
+}
+.illustration{
+    width: 1000px;
+                height: 1000px;
+                padding: 90px;
+                margin: 250px;
+                margin-left: 150px;
+                margin-right: 330px;
+                background-image: url('https://media.istockphoto.com/id/1162124339/photo/full-length-photo-pretty-beautiful-lady-sit-floor-hold-hands-books-glad-back-school-dreamy.jpg?s=612x612&w=0&k=20&c=ZBXWmLFo3WmXn6QyCD7muQO27-gEu6KSzIVXF3avaPQ=');
+
+                              background-repeat: no-repeat;
+                background-attachment: fixed;
+                background-size: 1000px 1000px;
+
+}
+
+   
+
+h1{
+    margin: -10px;
+}
+
+    <!---------------->
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Poppins", sans-serif;
+    } 
+    body {
+        height: 100%;
+        width: 100;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        gap: 50px;
+        background-color: rgb(248, 249, 250);
+        font-family: Arial, sans-serif;
+    }
+    .img{
+        background-color: orangered;
+        border-style: solid;
+    }
+    .main{
+        height: 800px;
+        width: 1000px;
+        background-color: white;
+        box-shadow: 8px 8px 20px rgb(128, 128, 128);
+        position: relative;
+        overflow: hidden;
+    }
+    .btn {
+        height: 100px;
+        width: 70px;
+        margin: 20px auto;
+        box-shadow: 10px 10px 30px rgb(254, 215, 188);
+        border-radius: 100px;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        justify-content: end;
+        padding: 10px 20px;
+        display: block;
+        float: left;
+    }
+
+
+    .slider {
+        height: 40px;
+        width: 100px;
+        border-radius: 100px;
+        background-image: linear-gradient(to down,
+                rgb(255, 195, 110),
+                rgb(255, 146, 91));
+        position: absolute;
+        top: 150px;
+        left: 10px;
+        transition: all 0.8s ease-in-out;
+    }
+    .moveslider {
+        left: 1000px;
+    }
+    .login{
+        font-size: 22px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+        
+    }
+    .signup {
+        font-size: 22px;
+        border: none;
+        outline: none;
+        background-color: transparent;
+        position: relative;
+        cursor: pointer;
+    }
+    .login-box{
+        height: 200px;
+        width: 5000000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 0px 250px;
+        padding-left: 550px;
+        
+        
+    }
+    .signup-box {
+        height: 200px;
+        width: 100000px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 10px 550px;
+    }
+    .login-box {
+        gap: 50px;
+        
+    }
+    
+    .signup-box {
+        gap: 30px;
+    }
+    .clkbtn {
+    height: 60px;
+    width: 150px;
+    border-radius: 50px;
+    background-image: linear-gradient(to right,
+            rgb(255, 195, 110),
+            rgb(255, 146, 91));
+    font-size: 30px;
+    border: none;
+    cursor: pointer;
+    }
+    .form-section {
+        height: 800px;
+        width: 100px;
+        padding: 20px 0;
+        display: flex;
+        position: relative;
+        transition: all 0.5s ease-in-out;
+        left: 0px;
+        
+    }
+    
+    .form-section-move {
+        left: -900px;
+    }
+   
+   
+    
+
+</style>
+<body>
+    <div class="main">
+    <div class="logo">
+        <img src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBwgHBgkIBwgKCgkLDRYPDQwMDRsUFRAWIB0iIiAdHx8kKDQsJCYxJx8fLT0tMTU3Ojo6Iys/RD84QzQ5OjcBCgoKDQwNGg8PGjclHyU3Nw7XbxFExycLQazNKacAT9Bi3voGURT3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3Nzc3N//AABEIAJQAlAMBEQACEQEDEQH/xAAcAAEAAQUBAQAAAAAAAAAAAAAABgEDBAUHAgj/xAA4EAABAwMABwQHCAMBAAAAAAAAAQIDBAURBhIhMUFRgQcTcaEUMkJhkbHBIiMkQ1JyktEWM6IV/8QAGwEBAAIDAQEAAAAAAAAAAAAAAAQFAQIDBgf/xAAyEQEAAQMCAwYFAwQDAAAAAAAAAQIDEQQFEiExIjJBUWHRExRxkcGBofAGUrHhM0JD/9oADAMBAAIRAxEAPwDuIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAsVlZT0NNJU1crYYI26z5HrhGoZiJmcQzFM1TiEar9KnuavoEGqipsfMm3+P9nndXvXDXNFiM48fZa2Ntiedyf0hH6y/XV+s51dIxE/ThqJ8CDG4aq5Pen9Fpb0Onj/plpJtKrhE77u51bvej8p5lrZsa6rnNePrKV8jp8c7cLlP2h3imcmZUnanCaJFz1TCljRY1cR34n9Ee5tmkqjuzH0lIbV2oW+VyMulNJTqvtx/bb8N/zJFNF6O9T9lXe2iaedurP15T7JxbrjR3SlSpt9RHUQKuEfGuUzy8TMxMdVVXbqt1cNcYllBoAAAAAAAAAAAAu4DiHabpVLX6QJQwOVaG3SpliLsmkRU1lXw3J1J9rT5tTE9aomPuudFY4KOKespMySKrgZUU70fFK3Wa5OKKfKbluuxcm3XGJhYUyjWkMzu/SnRfsI1FX3qen2WxT8Obs9VnpaY4OJoZD0NLrUxpOJIpR6nmmpZ66rhpKVmvPO9I42+9TvExEZlGuVxRTNVXSH0No/aoLJaae303qQswrv1OXaruqqqkGqqaqsy8nduTdrmufFsTVzAAAAAAAAAAABbqJO5gklxnUarseCGY5yzHOXy1rvmcsszlfJIqve5d6qu1VLrpHJ6emnEYhvdHNIJ7S7uZGrLRuXKx52sXm3+ih3fZrWvjjp7NcePn6S24cplbbPS6W3FZaSvZHCkSLJsy/Od2qu4q9ss3tNTOnv04mOnlP0lm5r50lqOzmctlV9l6q3NJdtuN00Gc9UX6FxE4RKd8zPbt/af9Ird9B7/bkc/0P0qJPzKZ2t/z63kp2oqhKt7lp7vLOJ9W+7JbArqqa9VUaokSrDTo9uFR257vp1Uzer5cMIG6amMRapn1l1QjqQAAAAAAAAAAAACj2o9jmuTLVTCoM4HzNdrXLZ7pVW6fOvTyKzKpvTe1eqYXqWtNcVU5eos1RcoiuPFjtQxMu8QvU8ktPKyankfFKz1XxuVrk6oaVYnq2mmJjEphaO0a/wBAjW1T46+JPZmbqvx+5PqinCq1TPohXdssXO72U9sWn9nuqtine6iqF9ifGqq+5+744OE25hV39sv2ucdqPT2S1uqqIqY28jRXvQAAAAAAAAAAAAAAEO090Lj0ihbVUisiuMTcNc7Y2Vv6XeeF4ZO1q7NHKeibpNX8CcVc6ZcarqCrt1U6mr6eSCdu9j246pzT3oSuKJjk9FbrpuU8VM5haRDWZdcLjWmky3iHtG54HOZbxCU6JaX1thkZDM59Tb9zoXLlWJzYq7vDd4HOYhC1e229RGaeVXn7uyUNZBX0sVVSyJJDK3WY5OKGjytyiq3VNFUYmF8NAAAAAAAAAAAAAKLjiBg3a0W68U/c3GkiqGJ6uum1q80Xei+BmKpjo6Wr1dqeKicIBeOy1U1pLHW8c9xVfJHInzRfE6/F81vY3jwu0/rHshN1slys8vd3GjlhRV2SKmWO8HJs6bzPFErixqLV+OxVn/P2YbWmkylxC4iGktoh0bsouMn4y2PXMbUSaJOWVw5PkvxMZy8/vliI4bsdek/h0YPPgAAAAAAAAAAAARftAva2mxvjhdq1VVmKPC7UT2ndE81QLLa9L8xfzPdp5z+HO7RprebSjWNnSqgT8upy7Ce52cp5m0RlfanbdPezOMT6eyY23tOtUuG3CmqKR/FzU7xnlt8jb4cz0Ut3aLtM9iYn9mzqNM9E6mle2oudLJE5uHRyMVcpy1VQRarnwRY0eqpnNNMxLltXBR1j56q0seynWV6Rxu36qOXHhs4FVc1k6bUTZvdPP6/zq9Zp665tx8Tr4sFG4XCk7iz0TIhNeyyJVvlTInqsp1Rerk/ozSpd+mIsUx5y6km42eVVAAAAAAAAAAAFF3AcR00vX/tXyaWN2aaH7qD9qb16rt8MGcZez2/TfL2Iie9POf56I69x1phImWO9x2phzqlZcuN3E70xyy41SmdnoZKW1xMlRUkdl7kXhnh8MHgt11dF/V1VUdI5fZtbnEMK5wpFMj9yOTb0LLbL0125pnwTrNXFydL7OLO632h9XOxWz1io7VXejEzq/HKr1LemMPK7zqovX+CnpT/nxS4yqAAAAAAAAAAAAW54WTwyRSJlkjVa5MqmUXwDNMzTOYQi49mltkT8BUz0/Jirrp57SLcjU0c7cxPpMY/ePaVzb3q9/wCkZ/ZHars2uEWVZWxubzWFfo5SNXu2os/8umnHnE5/CZTutqvw/dg/4BVIv3lxhb+2JVX5oQ6v6ttU8oszn1nDf5yKukNjb9FaG2vSVdaeZu6STGE8E3FVrP6h1Wrjg7tPlH5lj4sy2HoktQ/UgjfI5eDUyQdPRcuzw26ZltN6miM1Ths7RoaslYyrvCNVkf8ArpkXKKvNy/Q9htuknT2+31lB1O7dibdnx8fZNmpjiWSjVAAAAAAAAAAAAAAAphAKOYx3rNRfFDWqimrvRlmJmOjwtNAu+GP+KHP5ez/bH2Z46vNcRrWphERE5Ih1iIiMQ1nn1MIZFQAAAAAAAAAAAAAAAFMoAynNAGU5gMpzAqAAAAAAAAAAAAAABR2eAFtUcBaej/ZAsObU52KgHlG1XFUAuxtm4qBfajuOQLjdYD0gFQAAAAAAAAAAAAAAKYAYAqAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAH//Z">
+
+    </div>
+    <!---------------------------->
+    <div class="left-section">
+        <div class="illustration">
+           <h2> Explore your creativity</h2>
+            Collaborate, create and keep track of your project easily and effectively.
+           
+        </div>
+    </div>
+    <div class="slider"> 
+    </div>
+    <div class="btn">
+        <button class="login">Login</button><br><br>
+        <button class="signup">Signup</button>
+    </div>
+   
+    <div class="form-section">
+        
+        <!-- login form -->
+
+
+        <div class="login-box">
+            <h1>Welcome</h1>
+            <p>Log in with your data</p>
+            <input type="email" 
+                   class="email ele" 
+                   placeholder="youremail@email.com">
+            <input type="password"
+                   class="password ele" 
+                   placeholder="password">
+            <button class="clkbtn">Login</button>
+        </div>
+         <!-- signup form -->
+
+
+         <div class="signup-box">
+            <h1>Welcome</h1>
+            <p>Log in with your data</p>
+            <input type="text" 
+                   class="name ele" 
+                   placeholder="Enter your name">
+            <input type="email" 
+                   class="email ele" 
+                   placeholder="youremail@email.com">
+            <input type="password" 
+                   class="password ele" 
+                   placeholder="password">
+            <input type="password" 
+                   class="password ele" 
+                   placeholder="Confirm password">
+            <button class="clkbtn">Signup</button>
+        </div>
+    </div>
+    
+    <script>
+        let signup = document.querySelector(".signup");
+    let login = document.querySelector(".login");
+    let slider = document.querySelector(".slider");
+    let formSection = document.querySelector(".form-section");
+    
+    signup.addEventListener("click", () => {
+        slider.classList.add("moveslider");
+        formSection.classList.add("form-section-move");
+    });
+    
+    login.addEventListener("click", () => {
+        slider.classList.remove("moveslider");
+        formSection.classList.remove("form-section-move");
+    });
+       </script>  
+</body>
+</html>
+
